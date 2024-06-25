@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "49ec38590d9c1f56da9188ab6525ddf6"
+name = "new-app"
+handle = "new-app-735"
+application_url = "https://johnny-hd-outer-everybody.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "aurea-dev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,write_customers,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://johnny-hd-outer-everybody.trycloudflare.com/auth/callback",
+  "https://johnny-hd-outer-everybody.trycloudflare.com/auth/shopify/callback",
+  "https://johnny-hd-outer-everybody.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
